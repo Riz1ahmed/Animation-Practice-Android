@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo_thumbnail_maker_red_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnRotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotation"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btnTranslation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Translation"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btnScaling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scaling"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btnAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alpha"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnMulti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multi"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/hide"
+                android:text="Hide"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/show"
+                android:text="Show"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
